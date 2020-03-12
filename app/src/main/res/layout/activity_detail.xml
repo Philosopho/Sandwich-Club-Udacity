@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.udacity.sandwichclub.DetailActivity"
+    >
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/sandwich_picture_content_description"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/backgrounds/scenic"
+        />
+    <ScrollView
+        android:id="@+id/sv_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/label_text_content_padding"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/detail_place_of_origin_label"
+                android:textStyle="bold"
+                android:textSize="@dimen/label_text_size"
+                android:paddingBottom="@dimen/label_padding"
+                android:paddingTop="@dimen/label_padding"
+                />
+
+            <TextView
+                android:id="@+id/origin_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/unknown_place_of_origin"
+                android:paddingBottom="@dimen/label_text_content_padding"
+                />
+
+            <TextView
+                android:id="@+id/also_known_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/detail_also_known_as_label"
+                android:textSize="@dimen/label_text_size"
+                android:paddingBottom="@dimen/label_padding"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/also_known_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/label_text_content_padding"
+                tools:text="Sandwich One Sandwich Two"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/label_padding"
+                android:text="@string/detail_ingredients_label"
+                android:textStyle="bold"
+                android:textSize="@dimen/label_text_size"
+                />
+
+            <TextView
+                android:id="@+id/ingredients_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/label_text_content_padding"
+                android:paddingRight="@dimen/label_text_content_padding"
+                android:paddingBottom="@dimen/label_text_content_padding"
+                tools:text="One Two Three Butter Milk" />
+
+            <TextView
+                android:id="@+id/description_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/detail_description_label"
+                android:paddingBottom="@dimen/label_padding"
+                android:textStyle="bold"
+                android:textSize="@dimen/label_text_size"
+                />
+            <TextView
+                android:id="@+id/description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/label_text_content_padding"
+                android:paddingLeft="@dimen/label_text_content_padding"
+                android:paddingRight="@dimen/label_text_content_padding"
+                tools:text="@tools:sample/lorem/random"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
