@@ -23,7 +23,6 @@ public class DetailActivity extends AppCompatActivity {
     private TextView imageSrcOriginTextView;
     private TextView alsoKnownAsTextView;
     private TextView ingredientsTextView;
-    private ScrollView descriptionScrollView;
     private TextView descriptionTextView;
     private TextView descriptionLabelTextView;
     private TextView alsoKnownAsLabelTextView;
@@ -37,7 +36,6 @@ public class DetailActivity extends AppCompatActivity {
         imageSrcOriginTextView = findViewById(R.id.origin_tv);
         alsoKnownAsTextView = findViewById(R.id.also_known_tv);
         ingredientsTextView = findViewById(R.id.ingredients_tv);
-        descriptionScrollView = findViewById(R.id.sv_description);
         descriptionTextView = findViewById(R.id.description_tv);
         descriptionLabelTextView = findViewById(R.id.description_label_tv);
         alsoKnownAsLabelTextView = findViewById(R.id.also_known_label);
