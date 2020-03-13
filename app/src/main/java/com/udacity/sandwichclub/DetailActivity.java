@@ -118,20 +118,17 @@ public class DetailActivity extends AppCompatActivity {
 
     private String buildStringsFromList(List<String> list) {
         StringBuilder builder = new StringBuilder();
-        boolean begin = true;
         boolean numbered = list.size() > 1;
-        int number = 1;
+        int number = 0;
 
         for(String string : list) {
-            if(begin) {
+            number++;
+            if(number == 1) {
                 addString(builder, number, string, numbered);
-                number++;
-                begin = false;
             }
             else {
                 builder.append("\n");
                 addString(builder, number, string, numbered);
-                number++;
             }
         }
 
